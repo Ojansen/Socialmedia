@@ -1,0 +1,278 @@
+html, body {
+    font-family: 'Questrial', sans-serif;
+    /*font-family: 'Muli', sans-serif;*/
+    font-size: 15px;
+	width: 100%;
+	height: 100%;
+	padding: 0 auto;
+	margin: 0 auto;
+	background: url(../img/background.jpg) no-repeat center center fixed;
+}
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+}
+/* buttons */
+.btn-danger {
+	background-color: #bf0000;
+	border-color: #bf0000;
+}
+.btn-danger:hover {
+	background-color: #7b0000;
+}
+/* global classes */
+.wrapper {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #fff;
+	margin-top: 10%;
+	border-radius: 10px;
+	box-shadow: 0px 0px 5px 10px #fff;
+}
+/* navbar */
+.navbar-nav > li > a {
+	padding: 10px;
+}
+.form-inline {
+	padding-top: 6px;
+	padding-bottom: 6px;
+}
+
+/* registratie formulier*/
+.form-control {
+	height: auto;
+	/*margin-bottom: 10px;*/
+}
+input[type="radio"] {
+	margin: 0px 4px 0px 1px;
+}
+
+/* Footer */
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+    background-color: #ccc;
+}
+/* instellingen pagina */
+.table{
+	background-color: white;
+}
+td > ul {
+	list-style: none;
+	margin: 0px;
+}
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+	border: none;
+	padding: 5px 15px 0px 15px;
+}
+.hr-form {
+	margin-top: 0px;
+}
+.panel {
+	background-color: transparent; 
+	border-top: 1px solid #ddd;
+}
+.panel-css {
+	margin-bottom: -1px;
+	border-radius: 0px;
+}
+.panel-heading {
+	font-family: 'Questrial', sans-serif;
+}
+.panel-heading > hr {
+	margin-bottom: 0px;
+}
+.panel-section {
+	background-color: #fff;
+	margin-bottom: 22px;
+	border-radius: 10px;
+}
+.panel-title {
+	font-size: 24px;
+}
+/* Profiel pagina */
+.headerplace {
+	padding-top: 300px;
+	margin-bottom: 20px;
+}
+.pfimage {
+	z-index: 2;
+	text-align: center;
+}
+.title {
+	text-align: center;
+}
+.title > h1 {
+	font-size: 42px;
+}
+.bio {
+	text-align: center;
+}
+.bio > p {
+	margin: 10px;
+	padding: 0px 25%;
+}
+.bio > a {
+	color: #ccc;
+}
+.bio > a:hover {
+	color: #aaa;
+}
+#editbio {
+	position: absolute;
+	left: 90%;
+	top: 80px;
+}
+@media only screen and (max-width: 990px) {
+	.bio {
+		position: relative;
+		width: 100%;
+		top: 0;
+		left: 0;
+		padding: 15px;
+	}
+	#editbio {
+		position: absolute;
+		left: 0;
+		top: 80px;
+		text-align: right;
+		right: 12px;
+	}
+}
+/* Profiel instellingen */
+textarea {
+   resize: none;
+}
+/* Newsfeed */
+.card {
+	background-color: #fff;
+	border-radius: 4px;
+	width: 100%;
+	margin: 20px 0px;
+	float: left;
+}
+@media only screen and (max-width: 600px) { 
+	.card { 
+	width: 100%;
+    }
+}
+.card-head {
+	padding: 15px;
+	border-bottom: 2px solid #e7e7e7;
+}
+.card-head a {
+	color: black;
+	text-decoration: none;
+}
+.card .card-head img {
+	width: 50px; 
+	border-radius: 5px; 
+	margin-right: 10px; 
+}
+.card img {
+	width: 100%;
+}
+.card h3 {
+	margin: 0px;
+}
+.Text_body {
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+/* post*/
+#close {
+	position: absolute;
+	top: 20px;
+	left: 465px;
+	cursor: pointer;
+}
+.newpost {
+	width: 555px;
+	height: 100%;
+	background-color: white;
+	border-radius: 4px;
+	display: inline-flex;
+	margin-bottom: 17px;
+}
+.postnew {
+	width: 100%;
+	padding: 20px;
+}
+.newpost > .post {
+	text-align: center;
+	padding: 10px;
+	border-right: 1px solid #e7e7e7;
+	width: 90px;
+}
+.post {
+	cursor: pointer;
+}
+.post svg {
+	height: 50px;
+	line-height: 50px;
+	transition-duration: 0.08s; 
+	transition-timing-function: linear;
+}
+.post svg:hover {
+	line-height: 40px; 
+}
+.post p {
+	margin: 0 auto;
+}
+.fa-font {
+	color: #111;
+}
+.fa-camera {
+	color: #d95e40;
+}
+.fa-quote-left {
+	color: #f2992e;
+}
+/* posts */
+.content {
+	padding: 0px 15px 15px;
+}
+.content h1 {
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.content-options {
+	display: inline;
+}
+.content-options svg {
+	margin: 5px;
+	float: right;
+	color: #444;
+}
+blockquote {
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.newcomment {
+	padding: 10px;
+    border-top: 1px solid #e7e7e7;
+}
+.comments {
+	padding: 0px;
+}
+.comment {
+	padding: 10px;
+	border-top: 2px solid #e7e7e7;
+	overflow: hidden;
+    text-overflow: ellipsis;
+}
+.comment a {
+	color: black;
+	font-weight: 600;
+}
+.comment img {
+	width: 40px;
+	height: auto;
+	margin-right: 10px;
+	border-radius: 5px;
+}
